@@ -56,24 +56,24 @@ function gameStart () {
 		if (computerGuess === "MATH") {
 			questionGuess = "e^(i*pi) + 1 = ?";
 			questionArray = math;
-			$("#question-display").css("background-image", "url('C://users/pedro/code/triviagame/assets/images/euler.png')");
+			$("#question").css("background-image", "url('C://users/pedro/code/triviagame/assets/images/euler.png')");
 		}
 		else if (computerGuess === "BIOLOGY") {
 			questionGuess = "What is inside the nucleus of a cell, other than D.N.A.?";
 			questionArray = bio;
-			$("#question-display").css("background-image", "url('C://users/pedro/code/triviagame/assets/images/cell.png')");
+			$("#question").css("background-image", "url('C://users/pedro/code/triviagame/assets/images/cell.png')");
 		}
 		else if(computerGuess === "MOVIES") {
 			questionGuess = "What movie does Jurasic Park Movie does Vince Von come out in?";
 			questionArray = mvs;
-			$("#question-display").css("background-image", "url('C://users/pedro/code/triviagame/assets/images/jp.png')");
+			$("#question").css("background-image", "url('C://users/pedro/code/triviagame/assets/images/jp.png')");
 		}
 		else {
 			questionGuess = "What is the symbol to end a line of code in most Computer Languages?"
 			questionArray = cs;
-			$("#question-display").css("background-image", "url('C://users/pedro/code/triviagame/assets/images/Cs.png')");
+			$("#question").css("background-image", "url('C://users/pedro/code/triviagame/assets/images/Cs.png')");
 		}
-	$("#question-display").html("<h1>" + questionGuess + "</h1>");
+	$("#question-display").html("<h2>" + questionGuess + "</h2>");
 	//Create a for loop that will create buttons from the answers array
         for (var i = 0; i < questionArray.length; i++) {
           var btn = $("<button>");

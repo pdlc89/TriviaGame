@@ -49,14 +49,20 @@ h1 {
   margin-bottom: 10px;
 }
 
+.question {
+  max-width: 260px;
+  max-height: 260px;
+  background-image: url("C://users/pedro/code/triviagame/assets/images/euler.png");
+  background-size: cover;
+}
+
 #question-display {
   font-family: verdana;
+  color: #001a44;
   float: left;
   max-width: 260px;
   margin-left:5px;
   margin-right: 5px;
-  background-image: url("C://users/pedro/code/triviagame/assets/images/euler.png");
-  background-size: cover;
 }
 #answers {
   max-width: 260px;
@@ -100,7 +106,9 @@ h3 {
 }
 h2 {
   font-family: Georgia, serif;
-  color: #ccc;
+  color: #e8eaed;
+  border-width: 2px;
+  border-color: black;
 }
 
 #start-button {
