@@ -1,0 +1,138 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url("C://users/pedro/code/triviagame/assets/images/bkg.jpg");
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  text-align: center;
+  background-color: transparent;
+  height: auto;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #777;
+  margin-top: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+h1 {
+  margin: 10px;
+  color: #77003f;
+  font-family: Marker Felt, fantasy;
+  border-width: 2px;
+  border-color: #ccc;
+
+}
+.sub-header {
+  max-width: 960px;
+  margin-left: 15%;
+  margin-right: 10%;
+}
+#timer-display {
+  font-family: Times New Roman;
+  font-weight: bold;
+  background-color: #666;
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 5px;
+  border-color: black;
+  border-width: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#question-display {
+  font-family: verdana;
+  float: left;
+  max-width: 260px;
+  margin-left:5px;
+  margin-right: 5px;
+  background-image: url("C://users/pedro/code/triviagame/assets/images/euler.png");
+  background-size: cover;
+}
+#answers {
+  max-width: 260px;
+  max-height: 260px;
+  float: right;
+}
+#loses {
+  color: black;
+}
+.answer-button {
+  font-weight: bold;
+  width: 75px;
+  max-width: 200px
+  height: auto;
+  float: left;
+  padding: 5px; 
+  background-color: #777;
+  border-radius: 10px;
+  border-width: 5px;
+  border-color: black;
+  background-repeat:no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  outline:none;
+}
+.main {
+  float: right;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+  flex: 1 0 auto;
+  padding: 20px;
+  }
+
+h3 {
+  font-family: Georgia, serif;
+  text-align: center;
+  border-color: #ccc;
+  color:#77003f;
+}
+h2 {
+  font-family: Georgia, serif;
+  color: #ccc;
+}
+
+#start-button {
+  font-family: Jazz LET, fantasy; 
+  cursor: pointer; 
+  margin-top: 67px;
+  float: right;
+  font-size: 30pt;
+  background-color: #5177b5;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+  padding: 10px;
+  margin-right: 40%;
+}
+
+img:hover {
+  -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+footer {
+  padding: 30px 0;
+  clear: both;
+  font-size: 12px;
+  color: #fff;
+  color: #ccc;
+  text-align: center;
+  background: #645e56;
+  border-top: 8px solid #4aaaa5;
+  flex: 0;
+  padding: 20px;
+}
