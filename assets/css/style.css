@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-image: url("C://users/pedro/code/triviagame/assets/images/bkg.jpg");
+  background-image: url("../../assets/images/bkg.jpg");
   display: flex;
   flex-direction: column;
   height: 100vh;
