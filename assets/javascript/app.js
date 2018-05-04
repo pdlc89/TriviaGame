@@ -12,20 +12,20 @@ $(document).ready(function(){
 	var ifWon = false;
 	var isGameStarted = false;
 	var topics = ["BIOLOGY", "MATH", "MOVIES", "COMPUTERS"];
-	//Array of possible answers
+//Array of possible answers
 	var math = ["1", "pi", "0", "root(-1)", "2.667561", "infinity"]
 	var bio = ["Ribosomes", "Mitocondria", "R.N.A."];
 	var mvs = ["Jurasic Park", "The Lost World", "III", "Jurasic World"];
 	var cs = [";", ":", "-", "}"];
 	
-	// functions
+// functions
 	function newGame() {
 		$("#answers, #timer-display, #question-display").empty();
 		if (count != 0){
 			count = 60;
 			isGameStarted = false;
 		}
-		$(".main").prepend("<button id='start-button'>Start</button>")
+		$("#start-button").text("Start")
 	}
 	
 	function gameRestart() {
@@ -51,7 +51,7 @@ $(document).ready(function(){
 		//an arry within an array if you will.
 			computerGuess = topics[Math.floor(Math.random()*topics.length)];
 			console.log ("The Topic is: " + computerGuess);
-			$("#games-played").text(gamesPlayed);
+			$("#games-played").text(gamesPlayed - 1);
 	
 		//2. Place the question in the the id "question-display"
 			if (computerGuess === "MATH") {
@@ -86,7 +86,7 @@ $(document).ready(function(){
 		//Checks if the user chose the correct answer if not puts up alert
 		$(".answer-button").on("click", function() {
 			userGuess = this.value;
-			console.log("The Users Guess is: " + userGuess);
+			//console.log("The Users Guess is: " + userGuess);
 			if (userGuess === "R.N.A.") {
 				gameRestart();
 			}
@@ -99,7 +99,6 @@ $(document).ready(function(){
 			else if (userGuess === ";") {
 				gameRestart();
 			}else {
-				alert("Plese try again.");
 				gamesLost++;
 				$("#loses").text(gamesLost);
 				return;
@@ -114,7 +113,7 @@ $(document).ready(function(){
 	
 	// Starts the game
 		$("#start-button").on("click", function(){
-			$("#start-button").remove();
+			$("#start-button").text("Good Luck!")
 			if (isGameStarted === false) {
 				gameStart();
 				isGameStarted = true;
@@ -122,7 +121,7 @@ $(document).ready(function(){
 				//Starts the countdown
 				if (isGameStarted) {
 				var timer = setInterval(function() {
-						  count=count-1;
+						  count = count-1;
 							  if (count <= 0) {
 								 clearInterval(timer);
 							 isGameStarted = false;
